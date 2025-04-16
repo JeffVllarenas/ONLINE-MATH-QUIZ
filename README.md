@@ -28,4 +28,4 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/ONLINE-MATH-QUIZ.git
+   git clone https://github.com/JeffVllarenas/ONLINE-MATH-QUIZ.git
