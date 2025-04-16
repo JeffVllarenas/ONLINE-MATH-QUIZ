@@ -1,6 +1,6 @@
 # ONLINE MATH QUIZ
 
-**ONLINE MATH QUIZ** is an interactive web-based quiz system designed to help users practice and improve their math skills. It features different difficulty levels, real-time feedback, score tracking, and an intuitive interface built using modern web development principles.
+**ONLINE MATH QUIZ** is an interactive web-based quiz system designed to help users practice and improve their math skills. It features different difficulty levels, score tracking, and an intuitive interface built using modern web development principles.
 ---
 
 ## 📌 Features
