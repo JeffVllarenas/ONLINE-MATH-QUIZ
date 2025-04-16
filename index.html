@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="nameInputSection">
+            <h1>Welcome to the Math Quiz Challenge</h1>
+            <input type="text" id="playerName" placeholder="Enter your name" autocomplete="off">
+            <button id="nameSubmit">Start</button>
+        </section>
+
+        <section id="difficultySelection" style="display: none;">
+            <h2>Select Difficulty</h2>
+            <div class="difficulty-buttons">
+                <button class="difficulty-btn" data-mode="easy">Easy</button>
+                <button class="difficulty-btn" data-mode="medium">Medium</button>
+                <button class="difficulty-btn" data-mode="hard">Hard</button>
+            </div>
+        </section>
+
+        <section id="gameSection" style="display: none;">
+            <h2>Difficulty: <span id="currentDifficulty"></span></h2>
+            <div id="questionTracker"></div>
+            <h3 id="questionText"></h3>
+            <div id="answerChoices" class="answer-options"></div>
+            <div class="timer">Time Left: <span id="timeLeft">15</span>s</div>
+        </section>
+
+        <section id="highScores" style="display: none;">
+            <h2>🏆 Final Score</h2>
+            <div id="finalScore"></div>
+            <div id="answerCircles"></div>
+            <button id="showAnswersHighScores">Show Your Answers</button>
+            <div id="answersContainerHighScores" style="display: none;"></div>
+
+            <h2>Leaderboard</h2>
+            <div class="score-container">
+                <div class="table-container">
+                    <h3>Easy</h3>
+                    <table><thead><tr><th>#</th><th>Name</th><th>Score</th></tr></thead><tbody id="easyScores"></tbody></table>
+                </div>
+                <div class="table-container">
+                    <h3>Medium</h3>
+                    <table><thead><tr><th>#</th><th>Name</th><th>Score</th></tr></thead><tbody id="mediumScores"></tbody></table>
+                </div>
+                <div class="table-container">
+                    <h3>Hard</h3>
+                    <table><thead><tr><th>#</th><th>Name</th><th>Score</th></tr></thead><tbody id="hardScores"></tbody></table>
+                </div>
+            </div>
+
+            <div class="center-buttons">
+                <button id="retry">Retry</button>
+                <button id="backButton">Back</button>
+                <button id="quit">Quit</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
